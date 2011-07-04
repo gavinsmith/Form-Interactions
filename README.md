@@ -1,6 +1,4 @@
-A series of form interaction experiments.
-
-// 1: Form label behaviour (hiding on input change)
+#1: Form label behaviour (hiding on input change)
 	
 	*Notes:*
 	I've accounted for disabled JS, but haven't tested at all and style
