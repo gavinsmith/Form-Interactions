@@ -1,0 +1,50 @@
+html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td
+		{ margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+	blockquote:before,
+	blockquote:after,
+	q:before, q:after 	{ content: ""; }
+	blockquote, q  	{ quotes: "" ""; }
+	body 		{ line-height: 1; color: black; background: white; }
+	caption, th, td 	{ text-align: left; font-weight: normal; }
+	:focus 		{ outline: 0; }
+	table 		{ border-collapse: separate; border-spacing: 0; }
+	ol, ul  		{ list-style: none; }
+	section, header, footer, aside, figure{ display: block; }
+
+html,body{ height: 100%; }
+
+
+
+body{
+	font: 13px/1.3em Helvetica, sans-serif;
+}
+
+.form-field{
+	position: relative;
+}
+
+.active-label input[type=text]{
+	background: transparent; /*since the label is going to be unter the input, we can't have a BG on the input*/
+	border: 1px solid #ccc;
+	font: inherit;
+	margin: 0;
+	padding: 0.3em 0.5em;
+	position: relative; /*position to make z-index work*/
+	z-index: 50;
+}
+
+.active-label label{
+	border: 1px solid transparent; /*match the width of the input border to keep text positioning awesome*/
+	color: #aaa;
+	display: block;
+	padding: 0.3em 0.5em;
+	position: absolute; /*top left*/
+	z-index: 10;
+}
