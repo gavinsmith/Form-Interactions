@@ -26,36 +26,16 @@ body{
 	font: 13px/1.3em Helvetica, sans-serif;
 }
 
-.form-field{
-	position: relative;
-}
-
-.active-label input[type=text]{
-	background: transparent; /*since the label is going to be unter the input, we can't have a BG on the input*/
-	border: 1px solid #ccc;
-	font: inherit;
-	margin: 0;
-	padding: 0.3em 0.5em;
-	position: relative; /*position to make z-index work*/
-	z-index: 50;
-}
-
-.active-label label{
-	border: 1px solid transparent; /*match the width of the input border to keep text positioning awesome*/
-	color: #aaa;
-	display: block;
-	padding: 0.3em 0.5em;
-	position: absolute; /*top left*/
-	z-index: 10;
-}
-
-
-
-
-/* Here on in, all presentational and not directly related to the functionality or its layout. */
 #container{
 	margin: 20px;
 }
 p{
 	margin-bottom: 20px;
+}
+
+input[type=text],textarea{
+	border: 1px solid #ccc;
+	font: inherit;
+	margin: 0;
+	padding: 0.3em 0.5em;
 }

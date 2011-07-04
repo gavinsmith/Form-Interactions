@@ -1,0 +1,18 @@
+.form-field{
+	position: relative;
+}
+
+.active-label input[type=text]{
+	background: transparent; /*since the label is going to be unter the input, we can't have a BG on the input*/
+	position: relative; /*position to make z-index work*/
+	z-index: 50;
+}
+
+.active-label label{
+	border: 1px solid transparent; /*match the width of the input border to keep text positioning awesome*/
+	color: #aaa;
+	display: block;
+	padding: 0.3em 0.5em;
+	position: absolute; /*top left*/
+	z-index: 10;
+}
