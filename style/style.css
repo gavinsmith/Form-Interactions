@@ -13,7 +13,7 @@ html, body, div, span, applet, object, iframe,
 	blockquote, q  	{ quotes: "" ""; }
 	body 		{ line-height: 1; color: black; background: white; }
 	caption, th, td 	{ text-align: left; font-weight: normal; }
-	:focus 		{ outline: 0; }
+	/*:focus 		{ outline: 0; }*/
 	table 		{ border-collapse: separate; border-spacing: 0; }
 	ol, ul  		{ list-style: none; }
 	section, header, footer, aside, figure{ display: block; }
@@ -47,4 +47,15 @@ body{
 	padding: 0.3em 0.5em;
 	position: absolute; /*top left*/
 	z-index: 10;
+}
+
+
+
+
+/* Here on in, all presentational and not directly related to the functionality or its layout. */
+#container{
+	margin: 20px;
+}
+p{
+	margin-bottom: 20px;
 }

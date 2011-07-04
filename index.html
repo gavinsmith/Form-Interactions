@@ -23,17 +23,16 @@
 			
 			<form action="" method="get" accept-charset="utf-8">
 				
+				<p>The behaviour is simple. Focus a field, nothing happens. The label is positioned behind the input, and appears just as a <code>placeholder</code> attribute would, or a pre-populated <code>value</code>. A common technique for a while now has been to pre-populate and clear on focus, but this is <a href="http://gavinsmith.me/2011/06/forms-inputs-with-initial-values-acting-as-labels-and-html5s-placeholder-attribute/">really silly</a>. The <code>placeholder</code> attribute behaves the same way, although it is not meant to serve the same purpose semantically. Instead, the abel is updated with each keystroke - if there's content in the input, the label hides, and if the input becomes empty, the label shows itself again.</p>
+				
 				<p class="form-field">
 					<label for="name">Name</label>
 					<input type="text" name="name" value="" id="name">
 				</p>
-				
 				<p class="form-field">
 					<label for="email">Email</label>
 					<input type="text" name="email" value="" id="email">
 				</p>
-				
-				<p><input type="submit" value="Continue &rarr;"></p>
 			</form>
 			
 		</div>
