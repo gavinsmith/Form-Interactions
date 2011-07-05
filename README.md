@@ -11,7 +11,7 @@
 - Having no BG on the input to allow the label to show through means no BG styling... needs to apply to parent, but this is awkward.
 
 
-#1: Clever single-input submit button
+#2: Clever single-input submit button
 
 ##Notes
 - Inspired by the header search on theglobeandmail.com. Theirs appears on hover, end of story, and goes a long way to bring a bit more whitespace to the header.
