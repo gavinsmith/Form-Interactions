@@ -1,0 +1,17 @@
+#search{
+	/*border: 1px solid #999;*/
+	display: inline-block;
+	position: relative;
+}
+#search.clever-button input[type=submit]{
+	display: none;
+	position: absolute; top: 6px; right: 6px;
+}
+#search.clever-button input[type=text]{
+	padding: 6px;
+	line-height: 1.7em;
+}
+#search.clever-button input[type=submit]{
+	background: #91a6b9;
+	border: 1px solid #333;
+}
